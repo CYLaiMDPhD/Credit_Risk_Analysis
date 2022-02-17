@@ -1,6 +1,6 @@
 # Credit_Risk_Analysis
 
-*Note: This repository was created to fulfill an assignment (Module 17 Challenge) for the UC Berkeley Data Analytics and Visualization Bootcamp. Submitted on 2-18-22 for grading.*
+*Note: This repository was created to fulfill an assignment (Module 17 Challenge) for the UC Berkeley Data Analytics and Visualization Bootcamp. Submitted on 2-17-22 for grading.*
 
 
 ## Overview
