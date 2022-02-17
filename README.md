@@ -4,9 +4,10 @@
 
 
 ## Overview
-This report presents analyses of a set of historic loan data in order to calculate credit card risk for individuals. Six different machine learning algorithms from the Scikit Learn module were applied to the data set and their results are compared below. The data set was highly unbalances and predictions of high risk loans are much more difficult.
+This report presents analyses of a set of historic loan data in order to calculate credit card risk for individuals. Six different machine learning algorithms from the Scikit Learn module were applied to the data set and their results are compared below. The data set was highly imbalanced, making predictions of high risk loans more difficult.
 
-**Data Source: Loan dataset (not included in this repository due to size) was provided as part of course materials as a csv file**
+**Data Source:**
+Loan dataset (not included in this repository due to size) was provided as part of course materials as a csv file.
 
 ---
 
@@ -47,11 +48,11 @@ Figures 1 through 5 below show the classification score results for each method.
 
 
 
-Table 1 below displays the accuracy score, precision, and recall for predicting high risk loans by the five methods used.
+Table 1 below displays the accuracy score, precision, and recall for predicting high risk loans by the six methods used.
 
 **Table 1: Accuracy, Precision, and Recall Scores for Predicting High Risk Loans**
 
-| Model | Random OverSampling | SMOTE | CC Undersampling | Combination Sampling (SMOTEENN) | Random Forest | Easy Ensemble |
+| Model | Random Oversampling | SMOTE | CC Undersampling | Combination Sampling (SMOTEENN) | Random Forest | Easy Ensemble |
 |---|---|---|---|---|---|---|
 |Accuracy Score|0.608|0.620|0.539|0.565|0.788|0.925|
 |Precision|0.01|0.01|0.01|0.01|0.04|0.07|
@@ -59,10 +60,11 @@ Table 1 below displays the accuracy score, precision, and recall for predicting 
 
 
 Based on the data above, we can draw the following general observations:
-- All methods predicted low risk loans with high accuracy and precision, which is unsurprising given the highly imbalanced data set.
-- Overall, all methods yielded very low precision scores for predicting high risk loans, which is again unsurprising given the imbalanced nature of the data set. But ensemble methods performed better.
-- With this data set, resampling by Cluster Centroid Undersampling yielded the best recall score among the resampling methods used.
-- The Easy Ensemble algorithm in the SciKit Learn module yielded the best accuracy, precision, and recall scores compared to all other methods used.
+- All methods predicted low risk loans with high accuracy and precision, which is unsurprising given the highly imbalanced data set (Figures 1-6).
+- Overall, all methods yielded very low precision scores for predicting high risk loans, which is again unsurprising given the imbalanced nature of the data set. 
+- Among the resampling methods, Cluster Centroid Undersampling yielded the best recall score, but the lowest accuracy score (Table 1). 
+- Both ensemble methods (Random Forest Classifier and Easy Ensemble Classifier) gave better accuracy, precision, and recall scores than the resampling methods.
+- The Easy Ensemble algorithm in the SciKit Learn module yielded the best accuracy, precision, and recall scores compared to all other methods used (Table 1).
 
 
 
