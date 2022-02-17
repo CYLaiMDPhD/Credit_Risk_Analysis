@@ -54,9 +54,7 @@ Table 1 below displays the accuracy score, precision, and recall for predicting 
 | Model | Random OverSampling | SMOTE | CC Undersampling | Combination Sampling (SMOTEENN) | Random Forest | Easy Ensemble |
 |---|---|---|---|---|---|---|
 |Accuracy Score|0.608|0.620|0.539|0.565|0.788|0.925|
-|---|---|---|---|---|---|---|
 |Precision|0.01|0.01|0.01|0.01|0.04|0.07|
-|---|---|---|---|---|---|---|
 |Recall|0.59|0.55|0.66|0.57|0.67|0.91|
 
 
