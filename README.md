@@ -1,13 +1,32 @@
 # Credit_Risk_Analysis
 
-*Note: This repository was created to fulfill an assignment (Module 17 Challenge) for the UC Berkeley Data Analytics and Visualization Bootcamp. Submitted on 2-17-22 for grading.*
+*Note: This repository was created to fulfill an assignment (Module 17 Challenge) for the UC Berkeley Data Analytics and Visualization Bootcamp. The analysis, content, and format of this report were based on the grading rubric.*
+
+*Module Exercises Included:*
+- *Overview of supervised machine learning*
+- *Installation and use of SciKit Learn*
+- *Use of linear regression models*
+- *Use of logistic regression models*
+- *Evaluating predictions using statics reports and confusion matrix*
+- *Use of support vector machine (SVM) models*
+- *Data preparation for machine learning including label encoding and scaling*
+- *Data resampling methods*
+  - *Oversampling*
+  - *Undersampling*
+  - *Combination Sampling with SMOTEENN*
+- *Use of decision tree classification models*
+- *Use of ensemble models*
+  - *Random Forest Classification*
+  - *Adaptive Boosting/Gradient Boosting*
+  - *Easy Ensemble*
 
 
 ## Overview
 This report presents analyses of a set of historic loan data in order to calculate credit card risk for individuals. Six different machine learning algorithms from the Scikit Learn module were applied to the data set and their results are compared below. The data set was highly imbalanced, making predictions of high risk loans more difficult.
 
 **Data Source:**
-Loan dataset (not included in this repository due to size) was provided as part of course materials as a csv file.
+
+A loan dataset with 85 features and one target was provided as part of course materials as a csv file. The dataset was not included in this repository due to size.
 
 ---
 
@@ -73,7 +92,7 @@ ___
 
 ## Summary
 
-This data set was highly imbalanced for low risk loans. Therefore, resampling the data prior to training a logistical regression model was necessary. Ensemble methods can also applied. The low precision scores for high risk loans is not surprising given the overwhelming number of actually low risk loans that by be falsely classified as high risk within the data set. The accuracy and recall scores may be more useful in the case to evaluate the best algorithm. All methods producted accuracy and recall scores above 50% with the two ensemble methods outperforming the resampling plus logistic regression methods. The Easy Ensemble decision tree method produced the best results with 92.5% accuracy and a recall score of 0.91 for high risk loans. This indicates that the method is highly sensitive for detecting high risk loans, even if it would flag many false positives. If a lending institution were interested in reducing the amount of bad loans, this would be a reasonable model to use. This would be desirable if the financial loss from bad loans would be greater than potential loss of profit from falsely classified good loans (actual low risk loans classified as false positives).
+This dataset was highly imbalanced with low risk loans greatly outnumbering high risk loans. Therefore, resampling the data prior to training a logistical regression model was necessary. Alternatively, ensemble methods can also applied. The low precision scores for high risk loans is not surprising given the overwhelming number of actually low risk loans that by be falsely classified as high risk within the data set. The accuracy and recall scores may be more useful in the case to evaluate the best algorithm. All methods producted accuracy and recall scores above 50% with the two ensemble methods outperforming the resampling plus logistic regression methods. The Easy Ensemble decision tree method produced the best results with 92.5% accuracy and a recall score of 0.91 for high risk loans. This indicates that the method is highly sensitive for detecting high risk loans, even if it would flag many false positives. If a lending institution were interested in reducing the amount of bad loans, this would be a reasonable model to use. This would be desirable if the financial loss from bad loans would be greater than potential loss of profit from falsely classified good loans (actual low risk loans classified falsely as high risk).
 
 
 
